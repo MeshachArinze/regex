@@ -1,0 +1,150 @@
+*, ::before, ::after {
+    margin: 0;
+    padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+#form {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#left {
+    padding: 1rem;
+    background: rgb(54, 54, 54);
+    display: flex;
+    flex-direction: column;
+}
+#right {
+    background: paleturquoise;
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+}
+
+.right_logo {
+    margin: 2rem 0;
+    text-align: center;
+}
+
+.right {
+    padding: 1.5rem;
+    margin-bottom: rem;
+}
+
+.right input[type="text"] {
+    margin-bottom: 1rem;
+}
+
+
+
+#form_img {
+    width: 50%;
+    margin: 1.5rem auto;
+}
+
+#form_img img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 4px;
+    padding: 0.5rem;
+}
+
+#form_box {
+    margin-bottom: 1.5rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.text, .pass, sub {
+    width: 100%;
+}
+
+.text span, .pass span {
+    color: white;
+    font-variant: small-caps;
+    font-size: 0.8rem;
+    line-height: 1.5;
+}
+
+input[type="text"], input[type="password"], input[type="submit"] {
+    width: 100%;
+    height: auto;
+    padding: 0.5rem;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    color: black;
+    cursor: pointer;
+}
+
+.sub {
+    margin: 1.3rem 0;
+}
+
+input[type="submit"] {
+    background-color: tomato;
+    color: white;
+    width: 100%;
+    font-size: 1rem;
+}
+
+input[type="submit"]:hover {
+    background-color: aqua;
+    cursor: pointer;
+}
+
+
+.anchor {
+    display: flex;
+    justify-content: center;
+}
+
+.anchor a {
+    width: 100%;
+    border: 1px solid white;
+    padding: 0.5rem;
+    text-align: center;
+    font-size: 1rem;
+}
+
+
+
+@media screen and (max-width: 768px) {
+    
+}
+
+@media screen and (min-width: 769px){
+    #form {
+        display: flex;
+        flex-flow: row nowrap;
+    }
+
+    #left {
+        flex: 1;
+    }
+
+    #right {
+        flex: 1;
+    }
+}
+
+
